@@ -102,3 +102,25 @@
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+/* ---------- Ampliar prints ao clicar ---------- */
+(function () {
+  var box = document.getElementById('lightbox');
+  if (!box) return;
+  var big = box.querySelector('img'), cap = box.querySelector('.lightbox__cap'), closeBtn = box.querySelector('.lightbox__close');
+  var last = null;
+  function open(img) {
+    last = document.activeElement;
+    big.src = img.currentSrc || img.src; big.alt = img.alt;
+    var fc = img.parentElement.querySelector('figcaption');
+    cap.textContent = fc ? fc.textContent : img.alt;
+    box.hidden = false; document.body.style.overflow = 'hidden'; closeBtn.focus();
+  }
+  function close() { box.hidden = true; document.body.style.overflow = ''; if (last) last.focus(); }
+  document.addEventListener('click', function (e) {
+    var shot = e.target.closest('.shot');
+    if (shot) { var img = shot.querySelector('img'); if (img && img.naturalWidth) open(img); }
+  });
+  box.addEventListener('click', function (e) { if (e.target !== big) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !box.hidden) close(); });
+})();
