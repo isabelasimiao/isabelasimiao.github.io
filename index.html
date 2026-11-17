@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isabela Simião — IA & Automação para Negócios</title>
+  <meta name="description" content="Portfólio de Isabela Simião: uso de IA e automação para otimizar o dia a dia de negócios — RH, marketing e gestão de carreira artística.">
+  <meta property="og:title" content="Isabela Simião — IA & Automação para Negócios">
+  <meta property="og:description" content="Menos tarefa manual, mais tempo para pessoas, marcas e decisões.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/isabela.jpg">
+  <meta name="theme-color" content="#0E0E10">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG reutilizável: o "nó" (marcador da marca) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="node" viewBox="0 0 24 24">
+    <circle cx="5" cy="12" r="3.2" fill="currentColor"/>
+    <circle cx="19" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M8.5 12h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="arrow-ur" viewBox="0 0 16 16">
+    <path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="arrow-down" viewBox="0 0 16 16">
+    <path d="M8 3v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="lock" viewBox="0 0 16 16">
+    <rect x="3" y="7" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M5.5 7V5a2.5 2.5 0 015 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  </symbol>
+</svg>
+
+<!-- ============ NAVEGAÇÃO ============ -->
+<header class="topbar">
+  <a href="#topo" class="pill pill--ghost brand" aria-label="Isabela Simião — início">
+    <svg class="ico"><use href="#node"/></svg> Isabela
+  </a>
+  <nav class="pill pill--solid mainnav" aria-label="Seções">
+    <a href="#sobre">Sobre</a>
+    <a href="#cases">Cases</a>
+    <a href="#stack">Stack</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="pill pill--ghost socials">
+    <a href="https://www.linkedin.com/in/isabela-simi%C3%A3o-410130329/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+    <a href="mailto:isabela.simiao99@gmail.com" aria-label="E-mail">@</a>
+  </div>
+  <button class="pill pill--ghost burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilemenu">
+    <span></span><span></span>
+  </button>
+</header>
+<div class="mobilemenu" id="mobilemenu" hidden>
+  <a href="#sobre">Sobre</a><a href="#cases">Cases</a><a href="#stack">Stack</a><a href="#contato">Contato</a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="topo" class="hero wrap">
+  <div class="hero__photo card reveal">
+    <div class="hero__img">
+      <img src="assets/img/isabela.jpg" alt="Isabela Simião sorrindo, de jaqueta bege" width="959" height="1198">
+    </div>
+    <ul class="hero__facts mono">
+      <li><span>Base</span>Campinas · SP</li>
+      <li><span>Curso</span>Administração · UNICAMP</li>
+      <li><span>Formatura</span>Dez/2027</li>
+    </ul>
+    <span class="badge-open mono"><svg class="ico"><use href="#node"/></svg> Aberta a oportunidades</span>
+  </div>
+
+  <div class="hero__info card reveal">
+    <p class="kicker mono"><svg class="ico accent"><use href="#node"/></svg> Administração · UNICAMP — 2027</p>
+    <h1 class="hero__name">Isabela Simião</h1>
+    <p class="hero__title">IA &amp; Automação<br>para Negócios</p>
+    <p class="hero__lead">Não construo IA — faço ela trabalhar no dia a dia. Menos tarefa manual, mais tempo para <em>pessoas, marcas e decisões</em>.</p>
+
+    <ul class="rowlinks">
+      <li><span>Cases com resultado</span><a class="btn btn--sm" href="#cases">Ver <svg class="ico"><use href="#arrow-down"/></svg></a></li>
+      <li><span>AcessiLab — app no ar</span><a class="btn btn--sm" href="https://acessilab.fabapp.app" target="_blank" rel="noopener">Testar <svg class="ico"><use href="#arrow-ur"/></svg></a></li>
+      <li><span>Minha stack de IA</span><a class="btn btn--sm" href="#stack">Explorar <svg class="ico"><use href="#arrow-down"/></svg></a></li>
+      <li><span>Vamos conversar</span><a class="btn btn--sm" href="#contato">Contato <svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Assinatura -->
+<div class="signature wrap" aria-hidden="true">
+  <svg viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid meet">
+    <text x="600" y="185" text-anchor="middle" class="sig-text">Isabela Simião</text>
+  </svg>
+</div>
+
+<!-- Números -->
+<section class="stats" aria-label="Destaques">
+  <div class="stats__grid wrap">
+    <div class="stat reveal"><strong data-count="132">132</strong><span class="mono">aditivos em 1 clique</span></div>
+    <div class="stat reveal"><strong data-count="25" data-suffix="h+">25h+</strong><span class="mono">de trabalho manual evitado</span></div>
+    <div class="stat reveal"><strong data-count="30" data-prefix="~">~30</strong><span class="mono">requisições/mês automatizadas</span></div>
+    <div class="stat reveal"><strong data-count="55" data-prefix="−" data-suffix="%">−55%</strong><span class="mono">no custo por visualização</span></div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="about wrap section">
+  <div class="about__media reveal">
+    <div class="card about__img">
+      <img data-src="assets/img/sobre" alt="Isabela em contexto de trabalho ou evento" data-ph="Foto secundária · 1200×1200">
+    </div>
+  </div>
+  <div class="about__text reveal">
+    <p class="label mono">( Sobre )</p>
+    <h2 class="h2">Tecnologia a serviço da rotina — não o contrário.</h2>
+    <p>Sou a Isabela, estudante de Administração na UNICAMP (formatura em dez/2027). Meu trabalho é olhar para processos do dia a dia — uma requisição que depende de dez e-mails, um relatório montado à mão todo mês — e descobrir onde a IA e a automação devolvem tempo para as pessoas.</p>
+    <p>Passei pelo RH LATAM da dsm-firmenich, por marketing em agência e pela gestão da carreira do artista Pedro Bustamante, além de organizar eventos na Atlética e no Centro Acadêmico. Em todos, a mesma lógica: entender quem usa o processo, simplificar e medir o resultado.</p>
+    <ul class="chips mono">
+      <li><svg class="ico accent"><use href="#node"/></svg> Pessoas</li>
+      <li><svg class="ico accent"><use href="#node"/></svg> Marcas</li>
+      <li><svg class="ico accent"><use href="#node"/></svg> Experiências</li>
+      <li><svg class="ico accent"><use href="#node"/></svg> Negócios</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap section section--tight" aria-label="Trajetória">
+  <p class="label mono reveal">( Onde já apliquei )</p>
+  <ol class="linelist">
+    <li class="reveal"><span class="num mono">01</span><h3>RH LATAM · dsm-firmenich</h3><p>Agentes de IA e fluxos no Power Automate para o time de Recursos Humanos.</p></li>
+    <li class="reveal"><span class="num mono">02</span><h3>Carreira artística · Pedro Bustamante</h3><p>Dashboard, calendário de conteúdo e tráfego pago para lançamentos musicais.</p></li>
+    <li class="reveal"><span class="num mono">03</span><h3>Agência de marketing</h3><p>Tráfego pago, social media e agentes de IA para branding e relatórios.</p></li>
+    <li class="reveal"><span class="num mono">04</span><h3>Atlética &amp; Centro Acadêmico</h3><p>Planejamento de eventos, divulgação e coordenação de pessoas.</p></li>
+  </ol>
+</section>
+
+<!-- ============ CASES ============ -->
+<section id="cases" class="wrap section">
+  <div class="sechead reveal">
+    <div>
+      <p class="label mono">( Cases )</p>
+      <h2 class="h2">Problemas reais,<br>soluções que rodam.</h2>
+    </div>
+    <p class="sechead__aside mono">Seis cases — cada um em Problema → Solução → Ferramentas → Resultado.</p>
+  </div>
+
+  <ol class="caseindex">
+    <li class="reveal"><a href="#case-acessilab"><span class="num mono">01</span><strong>AcessiLab</strong><em class="mono">Produto · MVP</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    <li class="reveal"><a href="#case-requisicoes"><span class="num mono">02</span><strong>Requisições de RH automatizadas</strong><em class="mono">Power Automate</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    <li class="reveal"><a href="#case-aditivos"><span class="num mono">03</span><strong>132 aditivos em 1 clique</strong><em class="mono">Power Automate</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    <li class="reveal"><a href="#case-agentes"><span class="num mono">04</span><strong>Agentes com as políticas de RH</strong><em class="mono">Copilot</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    <li class="reveal"><a href="#case-artista"><span class="num mono">05</span><strong>Carreira artística com IA</strong><em class="mono">Notion · Tráfego</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+    <li class="reveal"><a href="#case-agencia"><span class="num mono">06</span><strong>Agência de marketing</strong><em class="mono">Agentes · Relatórios</em><svg class="ico"><use href="#arrow-down"/></svg></a></li>
+  </ol>
+
+  <!-- ---------- CASE 01 · AcessiLab ---------- -->
+  <article id="case-acessilab" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">01</span>
+      <div>
+        <h3 class="h3">AcessiLab</h3>
+        <p class="mono meta">Empreendedorismo · UNICAMP · projeto em grupo</p>
+      </div>
+      <a class="btn btn--accent" href="https://acessilab.fabapp.app" target="_blank" rel="noopener">Testar o app <svg class="ico"><use href="#arrow-ur"/></svg></a>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>Inovações de acessibilidade existem, mas ficam espalhadas — e quem mais precisa delas, pessoas com deficiência e suas famílias, não tem um lugar único para encontrá-las.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Um MVP de app que reúne essas inovações num só lugar, construído pelo grupo inteiramente com prompts no Fabapp — do conceito ao app publicado, sem escrever código.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>Fabapp</li><li>Engenharia de prompts</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd><strong class="accent">App funcional e no ar</strong> — a ideia validada com um protótipo real que qualquer pessoa pode testar, em vez de slides.</dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Mídia</p>
+        <div class="gallery gallery--phones">
+          <figure class="shot shot--phone"><img data-src="assets/img/cases/a-1" alt="Tela inicial do AcessiLab" data-ph="Print do app · 1080×1920"></figure>
+          <figure class="shot shot--phone"><img data-src="assets/img/cases/a-2" alt="Lista de inovações no AcessiLab" data-ph="Print do app · 1080×1920"></figure>
+          <figure class="shot shot--phone"><img data-src="assets/img/cases/a-3" alt="Detalhe de uma inovação no AcessiLab" data-ph="Print do app · 1080×1920"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- CASE 02 · Requisições de RH ---------- -->
+  <article id="case-requisicoes" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">02</span>
+      <div>
+        <h3 class="h3">Requisições de RH automatizadas</h3>
+        <p class="mono meta">RH LATAM · dsm-firmenich</p>
+      </div>
+      <span class="lgpd mono"><svg class="ico"><use href="#lock"/></svg> Demonstração com dados fictícios — dados reais protegidos por LGPD</span>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>Requisições de estagiários, terceiros, aprendizes, bônus de férias e capacitação externa eram 100% manuais: o time coletava as informações com o colaborador, preenchia um documento modelo campo a campo, procurava gestor e HRBP para pedir aprovação por e-mail, arquivava cada e-mail e só então encaminhava ao setor responsável.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Um formulário onde o próprio colaborador envia tudo de uma vez. O envio dispara as aprovações certas, manda lembretes automáticos e, ao final, gera o documento com as aprovações, salva na pasta e envia ao fornecedor.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>Power Automate</li><li>Microsoft Forms</li><li>Outlook</li><li>SharePoint</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd>
+          <div class="kpis">
+            <div><strong>~30</strong><span class="mono">requisições/mês</span></div>
+            <div><strong>5</strong><span class="mono">tipos de processo</span></div>
+            <div><strong>~20h</strong><span class="mono">por mês devolvidas*</span></div>
+          </div>
+          <p class="footnote mono">*Estimativa: ~45 min de trabalho manual por requisição antes → ~5 min de conferência agora.</p>
+        </dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Fluxo</p>
+        <div class="beforeafter">
+          <div class="before">
+            <p class="mono">Antes</p>
+            <ol class="mono">
+              <li>Colaborador entra em contato</li>
+              <li>Time coleta as informações</li>
+              <li>Preenche o modelo campo a campo</li>
+              <li>Busca gestor e HRBP</li>
+              <li>Pede aprovação por e-mail</li>
+              <li>Arquiva cada e-mail</li>
+              <li>Encaminha ao setor responsável</li>
+            </ol>
+          </div>
+          <div class="after">
+            <p class="mono accent">Agora</p>
+            <div class="flow" role="img" aria-label="Fluxo automatizado: formulário, aprovações com lembretes, geração do documento, arquivamento na pasta, e-mail ao fornecedor">
+              <div class="flow__node"><b>Formulário</b><small>colaborador preenche tudo</small></div>
+              <div class="flow__link"></div>
+              <div class="flow__node"><b>Aprovações</b><small>gestor · HRBP</small><span class="flow__chip mono">↻ lembretes automáticos</span></div>
+              <div class="flow__link"></div>
+              <div class="flow__node"><b>Gera o arquivo</b><small>com as aprovações</small></div>
+              <div class="flow__link"></div>
+              <div class="flow__node"><b>Salva na pasta</b><small>arquivamento automático</small></div>
+              <div class="flow__link"></div>
+              <div class="flow__node flow__node--end"><b>E-mail ao fornecedor</b><small>processo concluído</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="shot"><img data-src="assets/img/cases/b-1" alt="Formulário de requisição com dados fictícios" data-ph="Print do formulário · 1600×1000"></figure>
+          <figure class="shot"><img data-src="assets/img/cases/b-2" alt="Fluxo no Power Automate" data-ph="Print do fluxo · 1600×1000"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- CASE 03 · Aditivos ---------- -->
+  <article id="case-aditivos" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">03</span>
+      <div>
+        <h3 class="h3">132 aditivos em 1 clique</h3>
+        <p class="mono meta">RH LATAM · dsm-firmenich</p>
+      </div>
+      <span class="lgpd mono"><svg class="ico"><use href="#lock"/></svg> Demonstração com dados fictícios — dados reais protegidos por LGPD</span>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>132 colaboradores precisavam assinar um aditivo contratual. Manualmente, seriam 132 documentos para preencher, enviar para 3 assinaturas cada, acompanhar e arquivar.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Uma automação que lê a base de dados, preenche cada aditivo, envia para as 3 assinaturas e arquiva os documentos assinados — tudo disparado com um clique.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>Power Automate</li><li>Excel</li><li>Word</li><li>Assinatura eletrônica</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd>
+          <div class="kpis">
+            <div><strong>132</strong><span class="mono">documentos</span></div>
+            <div><strong>1</strong><span class="mono">clique</span></div>
+            <div><strong>25h+</strong><span class="mono">de trabalho manual evitado*</span></div>
+          </div>
+          <p class="footnote mono">*Redução estimada.</p>
+        </dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Fluxo</p>
+        <div class="flow" role="img" aria-label="Fluxo: base de dados, preenchimento de 132 aditivos, envio para 3 assinaturas, arquivamento">
+          <div class="flow__node"><b>Base de dados</b><small>132 colaboradores</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Preenche o aditivo</b><small>modelo × 132</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>3 assinaturas</b><small>envio automático</small><span class="flow__chip mono">✍ ✍ ✍</span></div>
+          <div class="flow__link"></div>
+          <div class="flow__node flow__node--end"><b>Arquiva</b><small>documento assinado na pasta</small></div>
+        </div>
+        <div class="gallery">
+          <figure class="shot"><img data-src="assets/img/cases/c-1" alt="Modelo de aditivo com dados fictícios" data-ph="Print do modelo · 1600×1000"></figure>
+          <figure class="shot"><img data-src="assets/img/cases/c-2" alt="Fluxo de envio em massa" data-ph="Print do fluxo · 1600×1000"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- CASE 04 · Agentes Copilot ---------- -->
+  <article id="case-agentes" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">04</span>
+      <div>
+        <h3 class="h3">Agentes de IA com as políticas de RH</h3>
+        <p class="mono meta">RH LATAM · dsm-firmenich</p>
+      </div>
+      <span class="lgpd mono"><svg class="ico"><use href="#lock"/></svg> Demonstração com dados fictícios — dados reais protegidos por LGPD</span>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>Dúvidas sobre folha de pagamento, férias, benefícios e afastamentos chegam o tempo todo — e a resposta está em políticas longas, que levam tempo para consultar.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Agentes de IA no Copilot, alimentados com as políticas oficiais de RH, que respondem o time com base nos documentos da empresa — dentro do ambiente corporativo.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>Microsoft Copilot</li><li>Políticas internas como base</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd><strong class="accent">Consulta em segundos</strong>, em vez de procurar no documento — e respostas padronizadas para todo o time de RH.</dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Fluxo</p>
+        <div class="flow" role="img" aria-label="Fluxo: pergunta do time, agente Copilot, consulta às políticas, resposta">
+          <div class="flow__node"><b>Pergunta</b><small>"Quantos dias de férias posso vender?"</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Agente Copilot</b><small>ambiente corporativo</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Políticas de RH</b><small>folha · férias · benefícios · afastamentos</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node flow__node--end"><b>Resposta</b><small>baseada na política oficial</small></div>
+        </div>
+        <div class="gallery">
+          <figure class="shot"><img data-src="assets/img/cases/d-1" alt="Conversa com o agente usando pergunta fictícia" data-ph="Print da conversa · 1600×1000"></figure>
+          <figure class="shot"><img data-src="assets/img/cases/d-2" alt="Configuração do agente" data-ph="Print da configuração · 1600×1000"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- CASE 05 · Carreira artística ---------- -->
+  <article id="case-artista" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">05</span>
+      <div>
+        <h3 class="h3">Gestão de carreira artística com IA</h3>
+        <p class="mono meta">Pedro Bustamante · artista independente · <a class="metalink" href="https://www.youtube.com/channel/UCgmBhIti8OXbRtY2MWeuqDw" target="_blank" rel="noopener">Canal no YouTube <svg class="ico"><use href="#arrow-ur"/></svg></a></p>
+      </div>
+      <span class="lgpd mono"><svg class="ico"><use href="#lock"/></svg> Demonstração com dados fictícios — dados reais protegidos por LGPD</span>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>Lançamentos, conteúdo, fornecedores, orçamento e anúncios do artista independente Pedro Bustamante — tudo vivendo em conversas e planilhas soltas, sem visão do que funcionava.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Uma central de gestão no Notion (dashboard construído com ChatGPT e Notion AI), calendário de conteúdo, relatórios de métricas e press kit. No tráfego pago do YouTube, cada lançamento usou os dados do anterior para realocar o orçamento.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>Notion</li><li>Notion AI</li><li>ChatGPT</li><li>YouTube Ads</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd>
+          <div class="kpis">
+            <div><strong>1,45 mi</strong><span class="mono">visualizações em 3 lançamentos</span></div>
+            <div><strong>−55%</strong><span class="mono">custo por mil views (1º → 3º)</span></div>
+          </div>
+        </dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Tráfego pago · 3 lançamentos</p>
+        <div class="minicharts">
+          <figure class="minichart">
+            <figcaption class="mono">Visualizações</figcaption>
+            <div class="bars" style="--max:727">
+              <div class="bar" style="--v:261" tabindex="0" data-tip="1º lançamento · 261 mil views · R$ 3,2 mil investidos"><span class="bar__val">261 mil</span><span class="bar__lbl mono">1º</span></div>
+              <div class="bar" style="--v:464" tabindex="0" data-tip="2º lançamento · 464 mil views · R$ 5 mil investidos"><span class="bar__val">464 mil</span><span class="bar__lbl mono">2º</span></div>
+              <div class="bar" style="--v:727" tabindex="0" data-tip="3º lançamento · 727 mil views · R$ 4 mil investidos"><span class="bar__val">727 mil</span><span class="bar__lbl mono">3º</span></div>
+            </div>
+          </figure>
+          <figure class="minichart">
+            <figcaption class="mono">Custo por mil views (CPM)</figcaption>
+            <div class="bars" style="--max:12.26">
+              <div class="bar" style="--v:12.26" tabindex="0" data-tip="R$ 3.200 ÷ 261 mil = R$ 12,26 por mil views"><span class="bar__val">R$ 12,26</span><span class="bar__lbl mono">1º</span></div>
+              <div class="bar" style="--v:10.78" tabindex="0" data-tip="R$ 5.000 ÷ 464 mil = R$ 10,78 por mil views"><span class="bar__val">R$ 10,78</span><span class="bar__lbl mono">2º</span></div>
+              <div class="bar bar--hl" style="--v:5.50" tabindex="0" data-tip="R$ 4.000 ÷ 727 mil = R$ 5,50 por mil views"><span class="bar__val">R$ 5,50</span><span class="bar__lbl mono">3º</span></div>
+            </div>
+          </figure>
+        </div>
+        <div class="sr-only"><table>
+          <caption>Tráfego pago por lançamento</caption>
+          <tr><th>Lançamento</th><th>Investimento</th><th>Visualizações</th><th>CPM</th></tr>
+          <tr><td>1º</td><td>R$ 3.200</td><td>261 mil</td><td>R$ 12,26</td></tr>
+          <tr><td>2º</td><td>R$ 5.000</td><td>464 mil</td><td>R$ 10,78</td></tr>
+          <tr><td>3º</td><td>R$ 4.000</td><td>727 mil</td><td>R$ 5,50</td></tr>
+        </table></div>
+        <div class="flow flow--compact" role="img" aria-label="Ciclo: lançamento, calendário de conteúdo, anúncios, relatório de métricas, realocação de orçamento">
+          <div class="flow__node"><b>Lançamento</b></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Calendário</b></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Anúncios</b></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Relatório</b></div>
+          <div class="flow__link"></div>
+          <div class="flow__node flow__node--end"><b>Realoca verba</b><small>↻ próximo lançamento</small></div>
+        </div>
+        <div class="gallery">
+          <figure class="shot"><img data-src="assets/img/cases/e-1" alt="Dashboard no Notion com dados fictícios" data-ph="Print do dashboard · 1600×1000"></figure>
+          <figure class="shot"><img data-src="assets/img/cases/e-2" alt="Calendário de conteúdo ou press kit" data-ph="Calendário / press kit · 1600×1000"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- CASE 06 · Agência ---------- -->
+  <article id="case-agencia" class="case card reveal">
+    <header class="case__head">
+      <span class="num mono">06</span>
+      <div>
+        <h3 class="h3">Agência de marketing</h3>
+        <p class="mono meta">Tráfego pago &amp; social media</p>
+      </div>
+      <span class="lgpd mono"><svg class="ico"><use href="#lock"/></svg> Demonstração com dados fictícios — dados reais protegidos por LGPD</span>
+    </header>
+    <div class="case__body">
+      <dl class="psfr">
+        <div><dt class="mono">Problema</dt><dd>Cada cliente novo exigia entender perfil, tom de voz e público do zero — e os relatórios de métricas eram montados à mão todo mês.</dd></div>
+        <div><dt class="mono">Solução</dt><dd>Agentes de IA para perfil de cliente e branding, relatórios automáticos de métricas e apoio no planejamento de estratégias de tráfego e calendários de social media.</dd></div>
+        <div><dt class="mono">Ferramentas</dt><dd><ul class="tools mono"><li>ChatGPT</li><li>Claude</li><li>Notion</li></ul></dd></div>
+        <div><dt class="mono">Resultado</dt><dd><strong class="accent">Onboarding e relatórios mais rápidos e padronizados</strong> — e mais tempo para o que pede gente: estratégia e criação.</dd></div>
+      </dl>
+      <div class="case__media">
+        <p class="mono medialabel">Fluxo</p>
+        <div class="flow" role="img" aria-label="Fluxo: briefing do cliente, agente de perfil e branding, estratégia e calendário, métricas, relatório automático">
+          <div class="flow__node"><b>Briefing</b><small>do cliente</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Agente de perfil</b><small>público · tom · branding</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node"><b>Estratégia</b><small>tráfego + calendário</small></div>
+          <div class="flow__link"></div>
+          <div class="flow__node flow__node--end"><b>Relatório automático</b><small>métricas do mês</small></div>
+        </div>
+        <div class="gallery">
+          <figure class="shot"><img data-src="assets/img/cases/f-1" alt="Agente de perfil de cliente com dados fictícios" data-ph="Print do agente · 1600×1000"></figure>
+          <figure class="shot"><img data-src="assets/img/cases/f-2" alt="Relatório de métricas com dados fictícios" data-ph="Print do relatório · 1600×1000"></figure>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ STACK ============ -->
+<section id="stack" class="wrap section">
+  <div class="sechead reveal">
+    <div>
+      <p class="label mono">( Stack de IA )</p>
+      <h2 class="h2">Ferramentas certas<br>para cada rotina.</h2>
+    </div>
+    <p class="madewith mono"><svg class="ico accent"><use href="#node"/></svg> Este portfólio foi programado em parceria com o Claude — HTML, CSS e JS puros, do zero.</p>
+  </div>
+  <div class="stackgrid">
+    <div class="tool card reveal"><span class="mono tool__mono">Co</span><h3>Copilot</h3><p>Agentes com as políticas de RH, no ambiente corporativo.</p></div>
+    <div class="tool card reveal"><span class="mono tool__mono">Pa</span><h3>Power Automate</h3><p>Fluxos de aprovação, geração e envio de documentos.</p></div>
+    <div class="tool card reveal"><span class="mono tool__mono">Gp</span><h3>ChatGPT</h3><p>Dashboards, textos, análise de métricas e agentes.</p></div>
+    <div class="tool card reveal"><span class="mono tool__mono">No</span><h3>Notion AI</h3><p>Gestão de projetos, calendários e relatórios.</p></div>
+    <div class="tool card reveal"><span class="mono tool__mono">Cl</span><h3>Claude</h3><p>Estratégia, branding, textos longos — e o código deste portfólio.</p></div>
+    <div class="tool card reveal"><span class="mono tool__mono">Fa</span><h3>Fabapp</h3><p>Apps construídos por prompt — como o AcessiLab.</p></div>
+  </div>
+</section>
+
+<!-- ============ RESPONSABILIDADE ============ -->
+<section id="responsabilidade" class="responsible section">
+  <div class="wrap">
+    <div class="responsible__head reveal">
+      <svg class="ico ico--lg accent"><use href="#lock"/></svg>
+      <p class="label mono">( IA com responsabilidade )</p>
+      <h2 class="h2">Automatizar, sim.<br>Expor dados, nunca.</h2>
+    </div>
+    <ol class="linelist">
+      <li class="reveal"><span class="num mono">01</span><h3>Ferramentas aprovadas</h3><p>Em contexto corporativo, uso apenas ferramentas homologadas pela empresa, como o Copilot do Microsoft 365.</p></li>
+      <li class="reveal"><span class="num mono">02</span><h3>LGPD em primeiro lugar</h3><p>Dados pessoais de colaboradores e clientes não entram em ferramentas abertas.</p></li>
+      <li class="reveal"><span class="num mono">03</span><h3>Demonstrações fictícias</h3><p>Prints e fluxos deste portfólio foram recriados com dados fictícios.</p></li>
+      <li class="reveal"><span class="num mono">04</span><h3>Pessoas no controle</h3><p>Aprovações e decisões continuam com pessoas — a automação cuida do repetitivo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section id="contato" class="contact section">
+  <div class="wrap contact__inner reveal">
+    <p class="label mono">( Contato )</p>
+    <h2 class="h1">Vamos tirar o repetitivo<br>do caminho?</h2>
+    <p class="contact__lead">Estou aberta a estágios e projetos em IA aplicada a negócios. Me conta qual rotina da sua equipe poderia ser mais leve.</p>
+    <div class="contact__actions">
+      <a class="btn btn--lg btn--light" href="mailto:isabela.simiao99@gmail.com">isabela.simiao99@gmail.com <svg class="ico"><use href="#arrow-ur"/></svg></a>
+      <a class="btn btn--lg btn--outline" href="https://www.linkedin.com/in/isabela-simi%C3%A3o-410130329/" target="_blank" rel="noopener">LinkedIn <svg class="ico"><use href="#arrow-ur"/></svg></a>
+    </div>
+  </div>
+  <div class="signature signature--contact wrap" aria-hidden="true">
+    <svg viewBox="0 0 1200 240" preserveAspectRatio="xMidYMid meet">
+      <text x="600" y="170" text-anchor="middle" class="sig-text">até breve</text>
+    </svg>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="footer__brand"><svg class="ico accent"><use href="#node"/></svg> Isabela Simião — IA &amp; Automação para Negócios</span>
+    <nav class="mono footer__nav"><a href="#sobre">Sobre</a><a href="#cases">Cases</a><a href="#stack">Stack</a><a href="#contato">Contato</a></nav>
+    <span class="mono footer__copy">© <span id="year">2026</span> Isabela Simião · Programado com <a href="https://claude.ai" target="_blank" rel="noopener" class="accent">Claude</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
